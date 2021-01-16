@@ -124,17 +124,6 @@ F 3 "" H 6100 2500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Zener D1
-U 1 1 5FFBBF19
-P 4100 2900
-F 0 "D1" H 4100 3117 50  0000 C CNN
-F 1 "D_TVS" H 4100 3026 50  0000 C CNN
-F 2 "electronics-li-ion-charger:Diode_TVS-MSP5.0A" H 4100 2900 50  0001 C CNN
-F 3 "~" H 4100 2900 50  0001 C CNN
-	1    4100 2900
-	0    1    1    0   
-$EndComp
-$Comp
 L Connector:Conn_01x03_Male J4
 U 1 1 5FFBF742
 P 8300 3200
@@ -470,4 +459,15 @@ Wire Wire Line
 	3050 5200 3050 5350
 Wire Wire Line
 	4150 5200 4150 5350
+$Comp
+L Device:D_Zener D1
+U 1 1 5FFBBF19
+P 4100 2900
+F 0 "D1" H 4100 3117 50  0000 C CNN
+F 1 "D_TVS" H 4100 3026 50  0000 C CNN
+F 2 "electronics-li-ion-charger:Diode_TVS-MSP5.0A" H 4100 2900 50  0001 C CNN
+F 3 "~" H 4100 2900 50  0001 C CNN
+	1    4100 2900
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
