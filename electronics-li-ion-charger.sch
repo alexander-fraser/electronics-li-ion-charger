@@ -104,12 +104,12 @@ $EndComp
 $Comp
 L power:GND #PWR0101
 U 1 1 5FFBA88E
-P 7850 3650
-F 0 "#PWR0101" H 7850 3400 50  0001 C CNN
-F 1 "GND" H 7855 3477 50  0000 C CNN
-F 2 "" H 7850 3650 50  0001 C CNN
-F 3 "" H 7850 3650 50  0001 C CNN
-	1    7850 3650
+P 8700 3650
+F 0 "#PWR0101" H 8700 3400 50  0001 C CNN
+F 1 "GND" H 8705 3477 50  0000 C CNN
+F 2 "" H 8700 3650 50  0001 C CNN
+F 3 "" H 8700 3650 50  0001 C CNN
+	1    8700 3650
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -126,29 +126,27 @@ $EndComp
 $Comp
 L Connector:Conn_01x03_Male J4
 U 1 1 5FFBF742
-P 8300 3200
-F 0 "J4" H 8272 3132 50  0000 R CNN
-F 1 "Conn_01x03_Male" H 8272 3223 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 8300 3200 50  0001 C CNN
-F 3 "~" H 8300 3200 50  0001 C CNN
-	1    8300 3200
+P 9150 3200
+F 0 "J4" H 9122 3132 50  0000 R CNN
+F 1 "Conn_01x03_Male" H 9122 3223 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 9150 3200 50  0001 C CNN
+F 3 "~" H 9150 3200 50  0001 C CNN
+	1    9150 3200
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	7350 3100 7350 3250
 Wire Wire Line
-	7350 3100 7850 3100
+	8950 3200 8700 3200
 Wire Wire Line
-	8100 3200 7850 3200
+	8700 3200 8700 3100
+Connection ~ 8700 3100
 Wire Wire Line
-	7850 3200 7850 3100
-Connection ~ 7850 3100
+	8700 3100 8950 3100
 Wire Wire Line
-	7850 3100 8100 3100
+	8950 3300 8700 3300
 Wire Wire Line
-	8100 3300 7850 3300
-Wire Wire Line
-	7850 3300 7850 3650
+	8700 3300 8700 3650
 Wire Wire Line
 	7350 3550 7350 3650
 $Comp
@@ -423,7 +421,6 @@ Wire Notes Line
 	5100 5450 5100 4150
 Wire Wire Line
 	6500 3100 7350 3100
-Connection ~ 7350 3100
 $Comp
 L power:GND #PWR0105
 U 1 1 5FFD2CF5
@@ -442,15 +439,9 @@ Wire Wire Line
 Text Notes 5200 2200 0    50   ~ 0
 Battery Charger
 Wire Notes Line
-	5100 2050 9100 2050
-Wire Notes Line
-	9100 2050 9100 4000
-Wire Notes Line
-	9100 4000 5100 4000
+	10000 2050 10000 4000
 Wire Notes Line
 	5100 4000 5100 2050
-Text Notes 8150 2950 0    50   ~ 0
-To Battery
 Wire Wire Line
 	4100 3050 4100 3150
 Text Label 6850 3100 0    50   ~ 0
@@ -470,4 +461,40 @@ F 3 "~" H 4100 2900 50  0001 C CNN
 	1    4100 2900
 	0    1    1    0   
 $EndComp
+$Comp
+L Device:Battery_Cell BT1
+U 1 1 60035974
+P 7900 3450
+F 0 "BT1" H 8018 3546 50  0000 L CNN
+F 1 "Battery_Holder" H 8018 3455 50  0000 L CNN
+F 2 "electronics-li-ion-charger:Battery_Holder-PC_Pin-18650" V 7900 3510 50  0001 C CNN
+F 3 "~" V 7900 3510 50  0001 C CNN
+	1    7900 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 3100 7900 3100
+Connection ~ 7350 3100
+$Comp
+L power:GND #PWR03
+U 1 1 6003ECCA
+P 7900 3650
+F 0 "#PWR03" H 7900 3400 50  0001 C CNN
+F 1 "GND" H 7905 3477 50  0000 C CNN
+F 2 "" H 7900 3650 50  0001 C CNN
+F 3 "" H 7900 3650 50  0001 C CNN
+	1    7900 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 3550 7900 3650
+Wire Wire Line
+	7900 3100 7900 3250
+Wire Wire Line
+	7900 3100 8700 3100
+Connection ~ 7900 3100
+Wire Notes Line
+	5100 2050 10000 2050
+Wire Notes Line
+	5100 4000 10000 4000
 $EndSCHEMATC
