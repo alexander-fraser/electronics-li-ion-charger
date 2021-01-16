@@ -27,12 +27,12 @@ $EndComp
 $Comp
 L Device:R R3
 U 1 1 5FFB5567
-P 5600 4950
-F 0 "R3" H 5670 4996 50  0000 L CNN
-F 1 "470R" H 5670 4905 50  0000 L CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 5530 4950 50  0001 C CNN
-F 3 "~" H 5600 4950 50  0001 C CNN
-	1    5600 4950
+P 6000 4950
+F 0 "R3" H 6070 4996 50  0000 L CNN
+F 1 "470R" H 6070 4905 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 5930 4950 50  0001 C CNN
+F 3 "~" H 6000 4950 50  0001 C CNN
+	1    6000 4950
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -71,12 +71,12 @@ $EndComp
 $Comp
 L Device:LED D2
 U 1 1 5FFB7C3E
-P 5950 4950
-F 0 "D2" V 5989 4832 50  0000 R CNN
-F 1 "LED" V 5898 4832 50  0000 R CNN
-F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 5950 4950 50  0001 C CNN
-F 3 "~" H 5950 4950 50  0001 C CNN
-	1    5950 4950
+P 5600 4950
+F 0 "D2" V 5639 4832 50  0000 R CNN
+F 1 "LED" V 5548 4832 50  0000 R CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 5600 4950 50  0001 C CNN
+F 3 "~" H 5600 4950 50  0001 C CNN
+	1    5600 4950
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -174,7 +174,7 @@ F 3 "" H 7350 3650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5750 4950 5800 4950
+	5750 4950 5850 4950
 $Comp
 L power:GND #PWR0106
 U 1 1 5FFE4565
@@ -401,7 +401,7 @@ Wire Wire Line
 Wire Wire Line
 	6400 4600 6400 4950
 Wire Wire Line
-	6100 4950 6400 4950
+	6150 4950 6400 4950
 Connection ~ 6400 4950
 Wire Wire Line
 	6400 4950 6650 4950
@@ -424,9 +424,9 @@ Wire Wire Line
 	3050 4800 3050 4900
 Text Notes 5200 4300 0    50   ~ 0
 Status LEDs
-Text Notes 5850 5200 0    50   ~ 0
+Text Notes 5500 5200 0    50   ~ 0
 Charge\nRed
-Text Notes 7150 5200 0    50   ~ 0
+Text Notes 7100 5200 0    50   ~ 0
 Done\nGreen
 Wire Notes Line
 	5100 4150 7850 4150
@@ -468,4 +468,6 @@ Text Notes 8150 2950 0    50   ~ 0
 To Battery
 Wire Wire Line
 	4100 3050 4100 3150
+Text Label 6850 3100 0    50   ~ 0
+VBAT
 $EndSCHEMATC
