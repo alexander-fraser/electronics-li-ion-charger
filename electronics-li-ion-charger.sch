@@ -14,26 +14,15 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Device:R R4
-U 1 1 5FFB4EF8
-P 7150 4950
-F 0 "R4" H 7220 4996 50  0000 L CNN
-F 1 "470R" H 7220 4905 50  0000 L CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 7080 4950 50  0001 C CNN
-F 3 "~" H 7150 4950 50  0001 C CNN
-	1    7150 4950
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Device:R R3
 U 1 1 5FFB5567
-P 5600 4950
-F 0 "R3" H 5670 4996 50  0000 L CNN
-F 1 "470R" H 5670 4905 50  0000 L CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 5530 4950 50  0001 C CNN
-F 3 "~" H 5600 4950 50  0001 C CNN
-	1    5600 4950
-	0    -1   -1   0   
+P 6100 4650
+F 0 "R3" H 6170 4696 50  0000 L CNN
+F 1 "470R" H 6170 4605 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 6030 4650 50  0001 C CNN
+F 3 "~" H 6100 4650 50  0001 C CNN
+	1    6100 4650
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C2
@@ -60,23 +49,23 @@ $EndComp
 $Comp
 L Device:LED D3
 U 1 1 5FFB6F7B
-P 6800 4950
-F 0 "D3" V 6839 4832 50  0000 R CNN
-F 1 "LED" V 6748 4832 50  0000 R CNN
-F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 6800 4950 50  0001 C CNN
-F 3 "~" H 6800 4950 50  0001 C CNN
-	1    6800 4950
+P 6500 4950
+F 0 "D3" V 6539 4832 50  0000 R CNN
+F 1 "LED" V 6448 4832 50  0000 R CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 6500 4950 50  0001 C CNN
+F 3 "~" H 6500 4950 50  0001 C CNN
+	1    6500 4950
 	-1   0    0    1   
 $EndComp
 $Comp
 L Device:LED D2
 U 1 1 5FFB7C3E
-P 6000 4950
-F 0 "D2" V 6039 4832 50  0000 R CNN
-F 1 "LED" V 5948 4832 50  0000 R CNN
-F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 6000 4950 50  0001 C CNN
-F 3 "~" H 6000 4950 50  0001 C CNN
-	1    6000 4950
+P 5700 4950
+F 0 "D2" V 5739 4832 50  0000 R CNN
+F 1 "LED" V 5648 4832 50  0000 R CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 5700 4950 50  0001 C CNN
+F 3 "~" H 5700 4950 50  0001 C CNN
+	1    5700 4950
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -160,8 +149,6 @@ F 3 "" H 7350 3650 50  0001 C CNN
 	1    7350 3650
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5750 4950 5850 4950
 $Comp
 L power:GND #PWR0106
 U 1 1 5FFE4565
@@ -284,7 +271,7 @@ U 1 1 5FFBEBFA
 P 3050 5550
 F 0 "JP1" V 3096 5462 50  0000 R CNN
 F 1 "Jumper_2_Bridged" V 3005 5462 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3050 5550 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 3050 5550 50  0001 C CNN
 F 3 "~" H 3050 5550 50  0001 C CNN
 	1    3050 5550
 	0    -1   -1   0   
@@ -311,8 +298,6 @@ F 3 "" H 4150 6050 50  0001 C CNN
 	1    4150 6050
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6950 4950 7000 4950
 $Comp
 L power:GND #PWR02
 U 1 1 6001F8A6
@@ -345,7 +330,7 @@ U 1 1 5FFBE0EB
 P 4150 5550
 F 0 "JP2" V 4196 5462 50  0000 R CNN
 F 1 "Jumper_2_Open" V 4105 5462 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4150 5550 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 4150 5550 50  0001 C CNN
 F 3 "~" H 4150 5550 50  0001 C CNN
 	1    4150 5550
 	0    -1   -1   0   
@@ -367,31 +352,25 @@ Wire Wire Line
 $Comp
 L power:+5V #PWR01
 U 1 1 60047041
-P 5250 4650
-F 0 "#PWR01" H 5250 4500 50  0001 C CNN
-F 1 "+5V" H 5265 4823 50  0000 C CNN
-F 2 "" H 5250 4650 50  0001 C CNN
-F 3 "" H 5250 4650 50  0001 C CNN
-	1    5250 4650
+P 5300 4650
+F 0 "#PWR01" H 5300 4500 50  0001 C CNN
+F 1 "+5V" H 5315 4823 50  0000 C CNN
+F 2 "" H 5300 4650 50  0001 C CNN
+F 3 "" H 5300 4650 50  0001 C CNN
+	1    5300 4650
 	1    0    0    -1  
 $EndComp
 Text GLabel 6750 3300 2    50   UnSpc ~ 0
 STAT
-Text GLabel 6400 4600 1    50   UnSpc ~ 0
+Text GLabel 6100 4400 1    50   UnSpc ~ 0
 STAT
 Wire Wire Line
 	6500 3300 6750 3300
 Wire Wire Line
-	6400 4600 6400 4950
+	6100 4400 6100 4500
 Wire Wire Line
-	6150 4950 6400 4950
-Connection ~ 6400 4950
-Wire Wire Line
-	6400 4950 6650 4950
-Wire Wire Line
-	5250 4650 5250 4950
-Wire Wire Line
-	5250 4950 5450 4950
+	5850 4950 6100 4950
+Connection ~ 6100 4950
 Text Notes 2950 5400 3    50   ~ 0
 500mAh
 Text Notes 4050 5400 3    50   ~ 0
@@ -407,35 +386,14 @@ Wire Wire Line
 	3050 4800 3050 4900
 Text Notes 5200 4300 0    50   ~ 0
 Status LEDs
-Text Notes 5900 5200 0    50   ~ 0
+Text Notes 5600 5200 0    50   ~ 0
 Charge\nRed
-Text Notes 6700 5200 0    50   ~ 0
+Text Notes 6400 5200 0    50   ~ 0
 Done\nGreen
-Wire Notes Line
-	5100 4150 7850 4150
-Wire Notes Line
-	7850 4150 7850 5450
-Wire Notes Line
-	7850 5450 5100 5450
 Wire Notes Line
 	5100 5450 5100 4150
 Wire Wire Line
 	6500 3100 7350 3100
-$Comp
-L power:GND #PWR0105
-U 1 1 5FFD2CF5
-P 7650 5150
-F 0 "#PWR0105" H 7650 4900 50  0001 C CNN
-F 1 "GND" H 7655 4977 50  0000 C CNN
-F 2 "" H 7650 5150 50  0001 C CNN
-F 3 "" H 7650 5150 50  0001 C CNN
-	1    7650 5150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7300 4950 7650 4950
-Wire Wire Line
-	7650 4950 7650 5150
 Text Notes 5200 2200 0    50   ~ 0
 Battery Charger
 Wire Notes Line
@@ -497,4 +455,33 @@ Wire Notes Line
 	5100 2050 10000 2050
 Wire Notes Line
 	5100 4000 10000 4000
+Wire Wire Line
+	6100 4800 6100 4950
+Wire Wire Line
+	6100 4950 6350 4950
+$Comp
+L power:GND #PWR0105
+U 1 1 5FFD2CF5
+P 6950 5150
+F 0 "#PWR0105" H 6950 4900 50  0001 C CNN
+F 1 "GND" H 6955 4977 50  0000 C CNN
+F 2 "" H 6950 5150 50  0001 C CNN
+F 3 "" H 6950 5150 50  0001 C CNN
+	1    6950 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 4650 5300 4950
+Wire Wire Line
+	5300 4950 5550 4950
+Wire Wire Line
+	6650 4950 6950 4950
+Wire Wire Line
+	6950 4950 6950 5150
+Wire Notes Line
+	5100 4150 7150 4150
+Wire Notes Line
+	7150 4150 7150 5450
+Wire Notes Line
+	7150 5450 5100 5450
 $EndSCHEMATC
