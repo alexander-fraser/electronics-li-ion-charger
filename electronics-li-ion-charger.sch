@@ -27,12 +27,12 @@ $EndComp
 $Comp
 L Device:C C2
 U 1 1 5FFB5FE0
-P 7350 3400
-F 0 "C2" H 7465 3446 50  0000 L CNN
-F 1 "4.7U" H 7465 3355 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 7388 3250 50  0001 C CNN
-F 3 "~" H 7350 3400 50  0001 C CNN
-	1    7350 3400
+P 7050 3400
+F 0 "C2" H 7165 3446 50  0000 L CNN
+F 1 "4.7U" H 7165 3355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 7088 3250 50  0001 C CNN
+F 3 "~" H 7050 3400 50  0001 C CNN
+	1    7050 3400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -91,17 +91,6 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf" H 5950 3150 
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0101
-U 1 1 5FFBA88E
-P 8700 3650
-F 0 "#PWR0101" H 8700 3400 50  0001 C CNN
-F 1 "GND" H 8705 3477 50  0000 C CNN
-F 2 "" H 8700 3650 50  0001 C CNN
-F 3 "" H 8700 3650 50  0001 C CNN
-	1    8700 3650
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+5V #PWR0102
 U 1 1 5FFBAC90
 P 6100 2500
@@ -115,38 +104,36 @@ $EndComp
 $Comp
 L Connector:Conn_01x03_Male J4
 U 1 1 5FFBF742
-P 9150 3200
-F 0 "J4" H 9122 3132 50  0000 R CNN
-F 1 "Conn_01x03_Male" H 9122 3223 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 9150 3200 50  0001 C CNN
-F 3 "~" H 9150 3200 50  0001 C CNN
-	1    9150 3200
+P 9100 4550
+F 0 "J4" H 9072 4482 50  0000 R CNN
+F 1 "Conn_01x03_Male" H 9072 4573 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 9100 4550 50  0001 C CNN
+F 3 "~" H 9100 4550 50  0001 C CNN
+	1    9100 4550
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	7350 3100 7350 3250
+	8900 4550 8650 4550
 Wire Wire Line
-	8950 3200 8700 3200
+	8650 4550 8650 4450
+Connection ~ 8650 4450
 Wire Wire Line
-	8700 3200 8700 3100
-Connection ~ 8700 3100
+	8650 4450 8900 4450
 Wire Wire Line
-	8700 3100 8950 3100
+	8900 4650 8650 4650
 Wire Wire Line
-	8950 3300 8700 3300
+	8650 4650 8650 5000
 Wire Wire Line
-	8700 3300 8700 3650
-Wire Wire Line
-	7350 3550 7350 3650
+	7050 3550 7050 3650
 $Comp
 L power:GND #PWR0103
 U 1 1 5FFC51A1
-P 7350 3650
-F 0 "#PWR0103" H 7350 3400 50  0001 C CNN
-F 1 "GND" H 7355 3477 50  0000 C CNN
-F 2 "" H 7350 3650 50  0001 C CNN
-F 3 "" H 7350 3650 50  0001 C CNN
-	1    7350 3650
+P 7050 3650
+F 0 "#PWR0103" H 7050 3400 50  0001 C CNN
+F 1 "GND" H 7055 3477 50  0000 C CNN
+F 2 "" H 7050 3650 50  0001 C CNN
+F 3 "" H 7050 3650 50  0001 C CNN
+	1    7050 3650
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -271,7 +258,7 @@ U 1 1 5FFBEBFA
 P 3050 5550
 F 0 "JP1" V 3096 5462 50  0000 R CNN
 F 1 "Jumper_2_Bridged" V 3005 5462 50  0000 R CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 3050 5550 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3050 5550 50  0001 C CNN
 F 3 "~" H 3050 5550 50  0001 C CNN
 	1    3050 5550
 	0    -1   -1   0   
@@ -330,7 +317,7 @@ U 1 1 5FFBE0EB
 P 4150 5550
 F 0 "JP2" V 4196 5462 50  0000 R CNN
 F 1 "Jumper_2_Open" V 4105 5462 50  0000 R CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 4150 5550 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4150 5550 50  0001 C CNN
 F 3 "~" H 4150 5550 50  0001 C CNN
 	1    4150 5550
 	0    -1   -1   0   
@@ -360,12 +347,10 @@ F 3 "" H 5300 4650 50  0001 C CNN
 	1    5300 4650
 	1    0    0    -1  
 $EndComp
-Text GLabel 6750 3300 2    50   UnSpc ~ 0
+Text GLabel 6750 3450 3    50   UnSpc ~ 0
 STAT
 Text GLabel 6100 4400 1    50   UnSpc ~ 0
 STAT
-Wire Wire Line
-	6500 3300 6750 3300
 Wire Wire Line
 	6000 4950 6100 4950
 Connection ~ 6100 4950
@@ -390,18 +375,12 @@ Text Notes 6250 5200 0    50   ~ 0
 Done\nGreen
 Wire Notes Line
 	5100 5450 5100 4150
-Wire Wire Line
-	6500 3100 7350 3100
 Text Notes 5200 2200 0    50   ~ 0
 Battery Charger
-Wire Notes Line
-	10000 2050 10000 4000
 Wire Notes Line
 	5100 4000 5100 2050
 Wire Wire Line
 	4100 3050 4100 3150
-Text Label 6850 3100 0    50   ~ 0
-VBAT
 Wire Wire Line
 	3050 5200 3050 5350
 Wire Wire Line
@@ -420,39 +399,20 @@ $EndComp
 $Comp
 L Device:Battery_Cell BT1
 U 1 1 60035974
-P 7900 3450
-F 0 "BT1" H 8018 3546 50  0000 L CNN
-F 1 "Battery_Holder" H 8018 3455 50  0000 L CNN
-F 2 "electronics-li-ion-charger:Battery_Holder-PC_Pin-18650" V 7900 3510 50  0001 C CNN
-F 3 "~" V 7900 3510 50  0001 C CNN
-	1    7900 3450
+P 7850 4800
+F 0 "BT1" H 7968 4896 50  0000 L CNN
+F 1 "Battery_Holder" H 7968 4805 50  0000 L CNN
+F 2 "electronics-li-ion-charger:Battery_Holder-PC_Pin-18650" V 7850 4860 50  0001 C CNN
+F 3 "~" V 7850 4860 50  0001 C CNN
+	1    7850 4800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7350 3100 7900 3100
-Connection ~ 7350 3100
-$Comp
-L power:GND #PWR03
-U 1 1 6003ECCA
-P 7900 3650
-F 0 "#PWR03" H 7900 3400 50  0001 C CNN
-F 1 "GND" H 7905 3477 50  0000 C CNN
-F 2 "" H 7900 3650 50  0001 C CNN
-F 3 "" H 7900 3650 50  0001 C CNN
-	1    7900 3650
-	1    0    0    -1  
-$EndComp
+	7850 4900 7850 5000
 Wire Wire Line
-	7900 3550 7900 3650
+	7850 4450 7850 4600
 Wire Wire Line
-	7900 3100 7900 3250
-Wire Wire Line
-	7900 3100 8700 3100
-Connection ~ 7900 3100
-Wire Notes Line
-	5100 2050 10000 2050
-Wire Notes Line
-	5100 4000 10000 4000
+	7850 4450 8650 4450
 Wire Wire Line
 	6100 4950 6200 4950
 $Comp
@@ -481,9 +441,9 @@ Wire Notes Line
 Wire Notes Line
 	7150 5450 5100 5450
 Text Notes 8150 7650 0    50   ~ 0
-13 February 2021
+19 February 2021
 Text Notes 10600 7650 0    50   ~ 0
-2-1
+3-0
 $Comp
 L Device:R R4
 U 1 1 60284F6E
@@ -503,4 +463,160 @@ Wire Wire Line
 	6900 4950 6950 4950
 Text Notes 7450 7500 0    50   ~ 0
 Li-Ion Charger
+Text Notes 7000 6650 0    50   ~ 0
+3-0: Add reverse polarity protection. Change current selection to header pins.
+$Comp
+L Device:R R6
+U 1 1 6031122B
+P 9450 2800
+F 0 "R6" H 9520 2846 50  0000 L CNN
+F 1 "10K" H 9520 2755 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 9380 2800 50  0001 C CNN
+F 3 "~" H 9450 2800 50  0001 C CNN
+	1    9450 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 6031186D
+P 8450 2800
+F 0 "R5" H 8520 2846 50  0000 L CNN
+F 1 "10K" H 8520 2755 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 8380 2800 50  0001 C CNN
+F 3 "~" H 8450 2800 50  0001 C CNN
+	1    8450 2800
+	1    0    0    -1  
+$EndComp
+Text Notes 7900 2200 0    50   ~ 0
+Reverse Polarity Protection
+Text GLabel 7350 3100 2    50   UnSpc ~ 0
+VBAT
+Wire Wire Line
+	6500 3100 7050 3100
+$Comp
+L power:GND #PWR05
+U 1 1 6032C739
+P 8950 3750
+F 0 "#PWR05" H 8950 3500 50  0001 C CNN
+F 1 "GND" H 8955 3577 50  0000 C CNN
+F 2 "" H 8950 3750 50  0001 C CNN
+F 3 "" H 8950 3750 50  0001 C CNN
+	1    8950 3750
+	1    0    0    -1  
+$EndComp
+Text GLabel 8150 2500 0    50   UnSpc ~ 0
+VBAT
+Wire Wire Line
+	7050 3100 7050 3250
+Connection ~ 7850 4450
+Text GLabel 7650 4450 0    50   UnSpc ~ 0
+PROT
+Text Notes 7400 4300 0    50   ~ 0
+Charger Terminals
+Wire Notes Line
+	7350 4150 7350 5350
+$Comp
+L Device:Q_NPN_BEC Q2
+U 1 1 6035F54B
+P 9050 3350
+F 0 "Q2" H 9241 3396 50  0000 L CNN
+F 1 "Q_NPN_BCE" H 9241 3305 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 9250 3450 50  0001 C CNN
+F 3 "~" H 9050 3350 50  0001 C CNN
+	1    9050 3350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:Q_PMOS_GSD Q1
+U 1 1 6035FD1C
+P 8950 2600
+F 0 "Q1" V 9292 2600 50  0000 C CNN
+F 1 "Q_PMOS_DGS" V 9201 2600 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 9150 2700 50  0001 C CNN
+F 3 "~" H 8950 2600 50  0001 C CNN
+	1    8950 2600
+	0    1    -1   0   
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 60361CF7
+P 7850 5000
+F 0 "#PWR03" H 7850 4750 50  0001 C CNN
+F 1 "GND" H 7855 4827 50  0000 C CNN
+F 2 "" H 7850 5000 50  0001 C CNN
+F 3 "" H 7850 5000 50  0001 C CNN
+	1    7850 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 603623EE
+P 8650 5000
+F 0 "#PWR04" H 8650 4750 50  0001 C CNN
+F 1 "GND" H 8655 4827 50  0000 C CNN
+F 2 "" H 8650 5000 50  0001 C CNN
+F 3 "" H 8650 5000 50  0001 C CNN
+	1    8650 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 2500 8450 2500
+Wire Wire Line
+	8450 2650 8450 2500
+Connection ~ 8450 2500
+Wire Wire Line
+	8450 2500 8750 2500
+Wire Wire Line
+	8450 2950 8450 3050
+Wire Wire Line
+	8450 3050 8950 3050
+Wire Wire Line
+	8950 3050 8950 2800
+Wire Wire Line
+	8950 3150 8950 3050
+Connection ~ 8950 3050
+Wire Wire Line
+	8950 3550 8950 3750
+Wire Wire Line
+	9250 3350 9450 3350
+Wire Wire Line
+	9450 3350 9450 2950
+Wire Wire Line
+	9450 2650 9450 2500
+Wire Wire Line
+	9450 2500 9150 2500
+Text GLabel 9800 2500 2    50   UnSpc ~ 0
+PROT
+Wire Wire Line
+	9450 2500 9800 2500
+Connection ~ 9450 2500
+Wire Wire Line
+	6500 3300 6750 3300
+Wire Wire Line
+	6750 3300 6750 3450
+Connection ~ 7050 3100
+Wire Wire Line
+	7050 3100 7350 3100
+Wire Wire Line
+	7650 4450 7850 4450
+Wire Notes Line
+	7650 2050 7650 4000
+Wire Notes Line
+	5100 2050 7650 2050
+Wire Notes Line
+	9900 5350 7350 5350
+Wire Notes Line
+	7850 2050 10100 2050
+Wire Notes Line
+	5100 4000 7650 4000
+Wire Notes Line
+	7350 4150 9900 4150
+Wire Notes Line
+	9900 4150 9900 5350
+Wire Notes Line
+	7850 2050 7850 4000
+Wire Notes Line
+	7850 4000 10100 4000
+Wire Notes Line
+	10100 4000 10100 2050
 $EndSCHEMATC
